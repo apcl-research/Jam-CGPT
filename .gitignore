@@ -1,0 +1,7 @@
+data/*/pkls/
+data/*/bins/
+data/*/tmp/
+data/*/__pycache__
+__pycache__
+out-jam-cgpt
+wandb
