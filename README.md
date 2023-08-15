@@ -25,6 +25,7 @@ pip install -r requirements.txt
 
 - **If you only want to make an inference with our models**, please see [Inference](#inference).
 - If you want to finetune a model using our processed and tokenized dataset, please see [finetuning](#finetuning)
+- If you want to recompile our datasets, please see [dataset](#dataset)
 
 ## Finetuning 
 These steps will show you how to fine-tune Jam-CGPT in our paper.
