@@ -14,6 +14,7 @@ This repository contains all the code and detailed instructions to rebuild [Jam-
 - [Inference](#inference)
 - [Metrics](#metrics)
 - [Dataset](#dataset)
+- [Pretraining](#pretraining)
 
 
 ## To-do list
@@ -81,5 +82,17 @@ python3 data/jam_cgpt_170k/prepare_fc_raw.py
       --valfids-file: file location of function id on valset
       --fundats-file: file location of function
       --coms-file: file location of comments
-  
+## Pretraining
+We also release the config file for pretaining the jam-cgpt 38m model and 110m model --``train_jam_cgpt_raw_38m.py`` and ``train_jam_cgpt_raw_110m.py``. You can find the script for pretraining the 350m model and instructions for pretraining in [Jam repo](https://github.com/apcl-research/jam). Data for pretraining is in our [Hugginface jam repo](https://huggingface.co/apcl/jam). Please cite the use of the dataset as follows:
+```
+@inproceedings{su2023language,
+      title={A Language Model of Java Methods with Train/Test Deduplication}, 
+      author={Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin Mcmillan},
+      month={December},
+      year={2023},
+      booktitle={Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+      location = {San Francisco, CA, USA},
+      series = {ESEC/FSE 2023}
+}
+```
 
