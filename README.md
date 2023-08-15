@@ -8,6 +8,13 @@ Proposed by:
 
 This repository contains all the code and detailed instructions to rebuild [Jam-CGPT](https://huggingface.co/apcl/Jam-CGPT) models in our HuggingFace [Automatic Program Comprehension Lab](https://huggingface.co/apcl) hub.
 
+## Quick link
+- [To-do list](#to-do-list)
+- [Finetuning](#finetuning)
+- [Inference](#inference)
+- [Metrics](#metrics)
+- [Dataset](#dataset)
+
 
 ## To-do list
 
@@ -59,5 +66,19 @@ python3 meteor.py jam_cgpt_predictions/predict_data170k_model350m.txt --coms-fil
 python3 use_score_v.py jam_cgpt_predictions/predict_170k_100mparameters.txt --gpu=0 --coms-filename=cgptcom.test --data=./data/jam_cgpt_170k
 ```
 
+## Dataset
+
+We also release all of our raw datasets for the experiements in our [Hugginface repo](https://huggingface.co/datasets/apcl/Jam-CGPT/tree/main) and the scripts for compiling the raw data to ``bin`` files in this Github repo. Before running the command, please create three dir: ``pkls``, ``bins``, and ``tmp``. Then, you can simply run the following command to generate ``train.bin`` and ``val.bin``.
+
+```
+python3 data/jam_cgpt_170k/prepare_fc_raw.py
+```
+- Note that you will need to put ``jam-cgpt-testfid.pkl``, ``jam-cgpt-valfid.pkl``, ``fundats-j1.pkl``, ``jam-cgpt-raw1.25m.pkl``, ``jam-cgpt-raw170k.pkl``, ``jam-cgpt-raw2.15m.pkl``, and ``jam-cgpt-raw620k.pkl`` to /nublar/datasets/jm52m/raw_data or you will need to change the parameters in the script.
+- Related parameters are as follows:
+  
+      --testfids-file: file lcation of function id on testset
+      --valfids-file: file location of function id on valset
+      --fundats-file: file location of function
+      --coms-file: file location of comments
   
 
