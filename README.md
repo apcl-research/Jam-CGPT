@@ -19,7 +19,7 @@ This repository contains all the code and detailed instructions to rebuild [Jam-
 
 ## To-do list
 
-To set up your local environment, run the following command. We recommend the use of a virtual environment for running the experiements.
+To set up your local environment, run the following command. We recommend the use of a virtual environment for running the experiments.
 ```
 pip install -r requirements.txt
 ``` 
@@ -70,7 +70,7 @@ python3 use_score_v.py jam_cgpt_predictions/predict_170k_100mparameters.txt --gp
 
 ## Dataset
 
-We also release all of our raw datasets for the experiements in our [Hugginface repo](https://huggingface.co/datasets/apcl/Jam-CGPT/tree/main) and the scripts for compiling the raw data to ``bin`` files in this Github repo. Before running the command, please create three dir: ``pkls``, ``bins``, and ``tmp``. Then, you can simply run the following command to generate ``train.bin`` and ``val.bin``.
+We also release all of our raw datasets for the experiments in our [Hugginface repo](https://huggingface.co/datasets/apcl/Jam-CGPT/tree/main) and the scripts for compiling the raw data to ``bin`` files in this Github repo. Before running the command, please create three dir: ``pkls``, ``bins``, and ``tmp``. Then, you can simply run the following command to generate ``train.bin`` and ``val.bin``.
 
 ```
 python3 data/jam_cgpt_170k/prepare_fc_raw.py
