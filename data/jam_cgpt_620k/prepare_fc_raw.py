@@ -25,7 +25,7 @@ if __name__=='__main__':
     parser.add_argument('--valfids-file', type=str, default='/nublar/datasets/jm52m/raw_data/jam-cgpt-valfid.pkl')
     parser.add_argument('--fundats-file', type=str, default='/nublar/datasets/jm52m/fundats-j1.pkl')
     parser.add_argument('--data-dir', type=str, default='bins/')
-    parser.add_argument('--coms-file', type=str, default='/nublar/datasets/jm52m/raw_data/jam-cgpt-raw620.pkl')
+    parser.add_argument('--coms-file', type=str, default='/nublar/datasets/jm52m/raw_data/jam-cgpt-raw620k.pkl')
     args = parser.parse_args()
 
     num_proc = outdir = args.num_proc

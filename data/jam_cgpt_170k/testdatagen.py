@@ -25,7 +25,7 @@ if __name__=='__main__':
     parser.add_argument('--testfids-file', type=str, default='/nublar/datasets/jm52m/raw_data/jam-cgpt-testfid.pkl')
     parser.add_argument('--fundats-file', type=str, default='/nublar/datasets/jm52m/q90fundats-j1.pkl')
     parser.add_argument('--coms-file', type=str, default='/nublar/datasets/jm52m/raw_data/jam-cgpt-raw170k.pkl')
-    parser.add_argument('--data-dir', type=str, default='jam_cgpt_test/')
+    parser.add_argument('--data-dir', type=str, default='funcom_test/')
 
     args = parser.parse_args()
 
