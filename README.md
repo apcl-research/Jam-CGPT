@@ -87,7 +87,7 @@ We also release the config file for pretaining the jam-cgpt 38m model and 110m m
 ```
 @inproceedings{su2023language,
       title={A Language Model of Java Methods with Train/Test Deduplication}, 
-      author={Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin Mcmillan},
+      author={Chia-Yi Su and Aakash Bansal and Vijayanta Jain and Sepideh Ghanavati and Collin McMillan},
       month={December},
       year={2023},
       booktitle={Proceedings of the 31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
@@ -98,9 +98,9 @@ We also release the config file for pretaining the jam-cgpt 38m model and 110m m
 ## Citation
 This work was accepted to [Automated Software Engineering](https://link.springer.com/journal/10515), an academic journal.  If you use this work in an academic paper, please cite the following:
 ```
-@misc{su2023distilled,
+@misc{su2024distilled,
       title={Distilled GPT for Source Code Summarization}, 
-      author={Chia-Yi Su and Collin Mcmillan},
+      author={Chia-Yi Su and Collin McMillan},
       year={2024},
       journal={Automated Software Engineering}
 }
