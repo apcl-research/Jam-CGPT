@@ -96,16 +96,14 @@ We also release the config file for pretaining the jam-cgpt 38m model and 110m m
 }
 ```
 ## Citation
-If you use this work in an academic paper, please cite the following:
+This work was accepted to [Automated Software Engineering](https://link.springer.com/journal/10515), an academic journal.  If you use this work in an academic paper, please cite the following:
 ```
 @misc{su2023distilled,
       title={Distilled GPT for Source Code Summarization}, 
       author={Chia-Yi Su and Collin Mcmillan},
-      year={2023},
-      eprint={2308.14731},
-      archivePrefix={arXiv},
-      primaryClass={cs.SE}
+      year={2024},
+      journal={Automated Software Engineering}
 }
 ```
-PDF available here: https://arxiv.org/abs/2308.14731
+Preprint PDF available here: https://arxiv.org/abs/2308.14731
 
