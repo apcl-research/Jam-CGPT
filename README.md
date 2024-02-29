@@ -51,7 +51,7 @@ CUDA_DEVICE_ORDER='PCI_BUS_ID' CUDA_VISIBLE_DEVICES='0' OMP_NUM_THREADS=2 time t
 After you download the test set named ``jam_cgpt_test.tar.gz`` in our [Hugginface repo](https://huggingface.co/datasets/apcl/Jam-CGPT/tree/main), you can simiply run command below for inference.
 
 ```
-CUDA_DEVICE_ORDER='PCI_BUS_ID' CUDA_VISIBLE_DEVICES='0' OMP_NUM_THREADS=2 time torchrun --rdzv-backend=c10d --rdzv-endpoint=localhost:4000 --nnodes=1 --nproc_per_node=1 sample_funcom_gpt.py config/finetune_model_350m_dataset_170k.py  --prediction_filename=predict_data170k_model350m.txt
+CUDA_DEVICE_ORDER='PCI_BUS_ID' CUDA_VISIBLE_DEVICES='0' OMP_NUM_THREADS=2 time torchrun --rdzv-backend=c10d --rdzv-endpoint=localhost:4000 --nnodes=1 --nproc_per_node=1 sample_jam_cgpt.py config/finetune_model_350m_dataset_170k.py  --prediction_filename=predict_data170k_model350m.txt
 ```
     --outdir: directory of the model that you want to use for inference
     --prediction_filename: prediction file name 
